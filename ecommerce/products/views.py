@@ -9,7 +9,6 @@ def home(request):
     else:
         context = {"username_is": request.user}
 
-    gigi = 'Marius'
-    template = 'home.html'
+    template = 'products/home.html'
 
     return render(request, template, context)
